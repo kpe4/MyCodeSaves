@@ -1,4 +1,4 @@
-# MyCodeSaves
+# БД ютуб
 
 CREATE TABLE users(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
