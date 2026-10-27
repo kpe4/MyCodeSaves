@@ -44,14 +44,31 @@ int main() {
     // float Count = (a + b + c)/3;
     // cout << "аверэйдж из твоих трех намберов > " << Count;
     
-    string str;
-    cout << "энтер ворд: ";
-    cin >> str;
-    if (str.length() != 6)
-    {
-        cout << "Потише мабой" ;
-    }else
-    {
-       cout << str[1]<<"\n" << str[3]<<"\n" << str[5]<<"\n";
+    // string str;
+    // cout << "энтер ворд: ";
+    // cin >> str;
+    // if (str.length() != 6){
+    //     cout << "Потише мабой" ;
+    // }else{
+    //    cout << str[1]<<"\n" << str[3]<<"\n" << str[5]<<"\n";
+    //    cout << str[5] << str[4] << str[3] << str[2] << str[1] << str[0];
+    // }
+    
+    while (true){
+        string str1;
+        cout << "энтер стринг: ";
+        cin >> str1;
+        string str2;
+        cout << "энтер энодер стринг: ";
+        cin >> str2;
+        
+        
+        if (str1.length() > str2.length()) {
+            cout << "больше символов у " << str1 << "\n";
+        }else if (str1.length() == str2.length()) {
+            cout << "записи равны по символам" << "\n";
+        }else{
+            cout << "больше символов у " << str2 << "\n";
+        }
     }
 }
