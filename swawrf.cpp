@@ -1,5 +1,7 @@
-#include <iostream> // бибилиотеки
+#include <iostream>
+#include <iomanip>// бибилиотеки
 using namespace std;
+using std::setprecision;
 
 int main(){
     setlocale(LC_ALL, "Russian.UTF-8");
@@ -141,13 +143,88 @@ int main(){
     // int distance = hypot(x2 - x1, y2 - y1);
     // cout << "\nРасстояние между точками равно: " << distance << endl;
     
-    float deg;
-    cout << "введите первый угол: ";
-    cin >> deg;
+    // float deg;
+    // cout << "введите первый угол: ";
+    // cin >> deg;
+    //
+    // float rad = deg * 3.14 / 180;
+    // float sinDeg = sin(rad);
+    // float cosDeg = cos(rad);
+    // cout << "Синус:" << round(sinDeg)<< endl;
+    // cout << "косинус: " << round(cosDeg)<< endl;
     
-    float rad = deg * 3.14 / 180;
-    float sinDeg = sin(rad);
-    float cosDeg = cos(rad);
-    cout << "Синус:" << round(sinDeg)<< endl;
-    cout << "косинус: " << round(cosDeg)<< endl;
+    // float a1;
+    // cout << "введите первую сторону треугольника: ";
+    // cin >> a1;
+    // float a2;
+    // cout << "введите вторую: ";
+    // cin >> a2;
+    // float a3;
+    // cout << "введите третью: ";
+    // cin >> a3;
+    // float polu = (a1 + a2 + a3) / 2;
+    // float gercva = polu * (polu - a1)*(polu - a2)*(polu - a3);
+    // float geron = sqrt(gercva);
+    // cout << "площадь треугольника равна: " << round(geron);
+    
+    // float a, b, c;
+    // cout << "ведите кэфы a, b, c" << endl;
+    // cin >> a >> b >> c;
+    // float discr = pow(b,2) - 4 * a * c;
+    // cout<<"D="<<b<<"^2"<<"-"<<"4"<<"*"<<a<<"*"<<c<<"="<<discr<<endl;
+    // if (discr > 0){
+    //     float x1 = (-b + sqrt(discr)) / (2 * a);
+    //     float x2 = (-b - sqrt(discr)) / (2 * a);
+    //     cout << "x1 = " << x1<<endl;
+    //     cout << "x2 = " << x2<<endl;
+    // }else if (discr < 0){
+    //     cout << "корней нет - D < 0" << endl;
+    // }else if (discr == 0){
+    //     cout << "D = 0" << endl;
+    //     float x1 = -b / 2 * a;
+    //     cout << "x1 = " << x1<<endl;
+    // }
+    // float qrt;
+    // cout << "введите число: ";
+    // cin >> qrt;
+    // float qrts = sqrt(qrt);
+    // float qrtc = cbrt(qrt);
+    // cout << "квадратный корень из числа " << qrt << " - " << qrts << ", а кубический - " << qrtc << endl; 
+    //
+    //
+    // float numa, numb;
+    // cout << "введите два числа для вычисления разности через пробел: ";
+    // cin >> numa >> numb;
+    // float module = fabs(numa - numb);
+    // cout << "абсолютный модуль разности ваших чисел = " << module << endl;
+    //
+    //
+    // double degrees;
+    // cout << "введите значение в град: ";
+    // cin >> degrees;
+    // float PI = 3.14;
+    // float rad = degrees * (PI / 180.0);
+    // float tg = tan(rad);
+    // cout << "в радианах: " << rad << endl;
+    // cout << "тангенс: " << tg << endl;
+    
+    // float S, p, n;
+    // cout << "введите вклад $: " << endl;
+    // cin >> S;
+    // cout << "введите ставку %: " << endl;
+    // cin >> p;
+    // cout << "введите длительность (лет): " << endl;
+    // cin >> n;
+    //
+    // float total = pow(1.0 + (p / 100.0), n) * S;
+    // cout << "полчучается мы должны тебе $" << total << endl;
+    
+    float radsh;
+    cout << "введите радиус шара: " << endl;
+    cin >> radsh;
+    
+    float V = 4.0 / 3.0 * 3.14 * pow(radsh, 3);
+    cout << "объем шара соствавялет " << V << " куб. метров" << endl;
+    
+    return 0;
 }
