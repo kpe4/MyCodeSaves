@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>// бибилиотеки
 using namespace std;
-using std::setprecision;
+#include <cmath>
 
 int main(){
     setlocale(LC_ALL, "Russian.UTF-8");
@@ -219,12 +219,50 @@ int main(){
     // float total = pow(1.0 + (p / 100.0), n) * S;
     // cout << "полчучается мы должны тебе $" << total << endl;
     
-    float radsh;
-    cout << "введите радиус шара: " << endl;
-    cin >> radsh;
+    // float radsh;
+    // cout << "введите радиус шара: " << endl;
+    // cin >> radsh;
+    //
+    // float V = 4.0 / 3.0 * 3.14 * pow(radsh, 3);
+    // cout << "объем шара соствавялет " << V << " куб. метров" << endl;
     
-    float V = 4.0 / 3.0 * 3.14 * pow(radsh, 3);
-    cout << "объем шара соствавялет " << V << " куб. метров" << endl;
+    // short s = 32000; // 2 bytes
+    // int i = 2000000000; // 4 bytes
+    // long l = 4000000000; // 4-8 bytes
+    // long long ll = 9 * pow(10, 18); // 8 bytes
+    // unsigned int ui = -1;
+    //
+    // float f = 9.5545645; // 4 bytes
+    // string str = "kdfsmgjkdfgkdf";
+    //
+    // double d = 9.040343040540343234; // 8 bytes
+    //
+    // char c = 'A'; // for one symbol
+    // bool b = true;
+    // bool false1 = false;
+    // cout << d;
     
+    
+    string str = "stringar";
+    int i = 25677;
+    float f = 24.512;
+    double d = 24.693989523;
+    auto str1 = "Hello World!";
+    bool test = true;
+    char c = 'A';
+    long l = 4000000000;
+    long long ll = 9 * pow(10, 18);
+    unsigned int ui = -1;
+    
+    cout << "String: " << str << " " << sizeof(str) << " bytes" << endl
+    << "Int: " << i << " " << sizeof(i) << " bytes" << endl
+    << "Float: " << f <<  " " << sizeof(f) << " bytes" << endl
+    << "Double: " << d << " " << sizeof(d) << " bytes" << endl
+    << "Auto: " << str1 << " " << sizeof(str1) << " bytes" << endl
+    << "Bool: " << test << " " << sizeof(test) << " bytes" << endl
+    << "Char: " << c << " " << sizeof(c) << " bytes" << endl
+    << "Long: " << l << " " << sizeof(l) << " bytes" << endl
+    << "Long long: " << ll << " " << sizeof(ll) << " bytes" << endl
+    << "Unsigned: " << ui << " " << sizeof(ui) <<" bytes" << endl;
     return 0;
 }
