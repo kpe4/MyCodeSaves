@@ -243,26 +243,94 @@ int main(){
     // cout << d;
     
     
-    string str = "stringar";
-    int i = 25677;
-    float f = 24.512;
-    double d = 24.693989523;
-    auto str1 = "Hello World!";
-    bool test = true;
-    char c = 'A';
-    long l = 4000000000;
-    long long ll = 9 * pow(10, 18);
-    unsigned int ui = -1;
+    // string str = "stringar";
+    // int i = 25677;
+    // float f = 24.512;
+    // double d = 24.693989523;
+    // auto str1 = "Hello World!";
+    // bool test = true;
+    // char c = 'A';
+    // long l = 4000000000;
+    // long long ll = 9 * pow(10, 18);
+    // unsigned int ui = -1;
+    //
+    // cout << "String: " << str << " " << sizeof(str) << " bytes" << endl
+    // << "Int: " << i << " " << sizeof(i) << " bytes" << endl
+    // << "Float: " << f <<  " " << sizeof(f) << " bytes" << endl
+    // << "Double: " << d << " " << sizeof(d) << " bytes" << endl
+    // << "Auto: " << str1 << " " << sizeof(str1) << " bytes" << endl
+    // << "Bool: " << test << " " << sizeof(test) << " bytes" << endl
+    // << "Char: " << c << " " << sizeof(c) << " bytes" << endl
+    // << "Long: " << l << " " << sizeof(l) << " bytes" << endl
+    // << "Long long: " << ll << " " << sizeof(ll) << " bytes" << endl
+    // << "Unsigned: " << ui << " " << sizeof(ui) <<" bytes" << endl;
     
-    cout << "String: " << str << " " << sizeof(str) << " bytes" << endl
-    << "Int: " << i << " " << sizeof(i) << " bytes" << endl
-    << "Float: " << f <<  " " << sizeof(f) << " bytes" << endl
-    << "Double: " << d << " " << sizeof(d) << " bytes" << endl
-    << "Auto: " << str1 << " " << sizeof(str1) << " bytes" << endl
-    << "Bool: " << test << " " << sizeof(test) << " bytes" << endl
-    << "Char: " << c << " " << sizeof(c) << " bytes" << endl
-    << "Long: " << l << " " << sizeof(l) << " bytes" << endl
-    << "Long long: " << ll << " " << sizeof(ll) << " bytes" << endl
-    << "Unsigned: " << ui << " " << sizeof(ui) <<" bytes" << endl;
+    int num;
+    cout << "1. четное/нечетное" << endl;
+    cout << "Введите число: " << endl;
+    cin >> num;
+    
+    if (num % 2 == 0) {
+        cout << "Число чётное" << endl;
+    } else {
+        cout << "Число нечётное" << endl;
+    }
+    
+    double num2;
+    cout << "2. отрицательно или нет" << endl;
+    cout << "Введите число: " << endl;
+    cin >> num2;
+    
+    if (num2 > 0) {
+        cout << "Число положительное" << endl;
+    } else if (num2 < 0) {
+        cout << "Число отрицательное" << endl;
+    } else {
+        cout << "Число равно нулю" << endl;
+    }
+    
+    int score;
+    cout << "3. баллы" << endl;
+    cout << "Введите баллы (0-100): " << endl;
+    cin >> score;
+    
+    if (score < 50) {
+        cout << "Оценка: 2" << endl;
+    } else if (score < 69) {
+        cout << "Оценка: 3" << endl;
+    } else if (score < 89) {
+        cout << "Оценка: 4" << endl;
+    } else if (score <= 100) {
+        cout << "Оценка: 5" << endl;
+    } else {
+        cout << "Ошибка: баллы не могут превышать 100" << endl;
+    }
+    
+    double num3;
+    cout << "4. принадлежит ли от 25 до 50" << endl;
+    cout << "Введите число: " << endl;
+    cin >> num3;
+    
+    if (num3 >= 25 && num3 <= 50) {
+        cout << "Принадлежит" << endl;
+    } else {
+        cout << "Не принадлежит" << endl;
+    }
+    
+    double a, b, c;
+    cout << "5. 3 стороны треугольника" << endl;
+    cout << "Введите сторону a: ";
+    cin >> a;
+    cout << "Введите сторону b: ";
+    cin >> b;
+    cout << "Введите сторону c: " << endl;
+    cin >> c;
+    
+    if (a + b > c && a + c > b && b + c > a) {
+        cout << "Треугольник существует" << endl;
+    } else {
+        cout << "Треугольник не существует" << endl;
+    }
+    
     return 0;
 }
