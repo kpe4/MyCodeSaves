@@ -331,6 +331,293 @@ int main(){
     } else {
         cout << "Треугольник не существует" << endl;
     }
+    /*int n;
+cout << "введите номер задания 6 - калькулятор 7 - месяцы: " << "\n";
+cin >> n;
+switch (n) {
+case 1:
+	cout << "задание 1" << "\n";
+	int num;
+	cout << "введите число: " << "\n";
+	cin >> num;
+
+	if (num % 2 == 0) {
+		cout << "число четное" << "\n";
+	}
+	else {
+		cout << "число нечетное" << "\n";
+	}
+	break;
+case 2:
+	cout << "задание 2" << "\n";
+	double num2;
+	cout << "введите число: " << "\n";
+	cin >> num2;
+
+	if (num2 > 0) {
+		cout << "число положительное" << "\n";
+	}
+	else if (num2 < 0) {
+		cout << "число отрицательное" << "\n";
+	}
+	else {
+		cout << "число равно нулю" << "\n";
+	}
+	break;
+case 3:
+	cout << "задание 3" << "\n";
+	int score;
+	cout << "введите баллы: " << "\n";
+	cin >> score;
+
+	if (score < 50) {
+		cout << "оценка 2" << "\n";
+	}
+	else if (score < 69) {
+		cout << "оценка 3" << "\n";
+	}
+	else if (score < 89) {
+		cout << "оценка 4" << "\n";
+	}
+	else if (score <= 100) {
+		cout << "оценка 5" << "\n";
+	}
+	else {
+		cout << "неверный балл" << "\n";
+	}
+	break;
+case 4:
+	cout << "задание 4" << "\n";
+	double num3;
+	cout << "введите число: " << "\n";
+	cin >> num3;
+
+	if (num3 >= 25 && num3 <= 50) {
+		cout << "число приналежит" << "\n";
+	}
+	else {
+		cout << "не принадлежит" << "\n";
+	}
+case 5:
+	cout << "задание 4" << "\n";
+	double a, b, c;
+	cout << "введите сторону a: ";
+	cin >> a;
+	cout << "введите сторону b: ";
+	cin >> b;
+	cout << "введите сторону c: ";
+	cin >> c;
+
+	if (a + b > c && a + c > b && b + c > a) {
+		cout << "треугольник существует" << "\n";
+	}
+	else {
+		cout << "треугольник не существует" << "\n";
+	}
+	break;
+case 6:
+	int t, x;
+	cout << "введите число t и x: " << "\n";
+	cin >> t >> x;
+
+	char ca;
+	cout << "введите операцию /*+-%: " << "\n";
+	cin >> ca;
+	switch (ca) {
+	case ('+'):
+		cout << t + x << "\n";
+		break;
+	case ('-'):
+		cout << t - x << "\n";
+		break;
+	case ('/'):
+		cout << t / x << "\n";
+		break;
+	case ('*'):
+		cout << t * x << "\n";
+		break;
+	case ('%'):
+		if (t != 0) {
+			cout << t % x;
+		}
+		else {
+			cout << "на ноль делить нельзя" << "\n";
+		}
+		break;
+	default:
+		cout << "че ты пишешь" << "\n";
+		break;
+	}
+case 7:
+	cout << "введите номер месяца" << "\n";
+	char mes;
+	cin >> mes;
+	switch (mes) {
+	case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+		cout << "в этом месяце 31 день" << "\n";
+		break;
+	case 4: case 6: case 9: case 11:
+		cout << "в этом месяце 30 дней" << "\n";
+		break;
+	case 2: 
+		cout << "28 дней" << "\n";
+		break;
+	default:
+		cout << "че ты пишешь" << "\n";
+		break;
+	}
+}*/
+
+/*cout << "четное нечетное" << endl;
+int num;
+cout << "введите число: " << endl;
+cin >> num;
+cout << (num % 2 == 0 ? "четное" : "нечетное") << endl;
+	
+cout << "введите 2 числа " << endl;
+int f, g;
+cin >> f >> g;
+cout << "минимальный: " << (f > g ? f : g);
+
+cout << "введите 2 числа" << endl;
+int h, j;
+cin >> h >> g;
+cout << (h > 0 ? g + h : h);
+
+double numer1, numer2;
+char op;
+cout << "первое число: ";
+cin >> numer1;
+cout << "введите операцию: ";
+cin >> op;
+cout << "введите второе: ";
+cin >> numer2;
+double result = (op == '+') ? (numer1 + numer2) :
+				(op == '-') ? (numer1 - numer2) :
+				(op == '*') ? (numer1 * numer2) :
+				(op == '/') ? (numer1 != 0 ? numer1 / numer2 : numeric_limits<double>::quiet_NaN()) :
+				numeric_limits<double>::quiet_NaN();
+cout << result << endl;*/
+
+
+/*int gg;
+cout << "введите год от рождения христа" << endl;
+cin >> gg;
+cout << (gg % 4 == 0 ? "високосный" : "не високосный") << endl;
+
+int nn;
+cout << "сумма попкупки: " << endl;
+cin >> nn;
+if (nn < 1000) {
+	cout << nn - (nn * 5) / 100 << endl;
+}
+else if (nn < 5000){
+	cout << nn - (nn * 10) / 100 << endl;
+}
+else if (nn < 100000) {
+	cout << nn - (nn * 25) / 100 << endl;
+}
+
+int denhi, denhi2;
+int bal = 0;
+char w;
+while (true) {
+	cout << "l - баланс, v - внос, b - вынос денег" << endl;
+	cin >> w;
+	switch (w) {
+	case ('v'):
+		cout << "введите сумму для внесения" << endl;
+		cin >> denhi;
+		bal += denhi;
+		cout << "внесено " << denhi << " рублей" << endl;
+		cout << "общий баланс " << bal << " денег" << endl;
+
+		break;
+	case ('b'):
+		cout << "введите сколько денег забрать " << endl;
+		cin >> denhi2;
+		if (denhi2 <= bal) {
+			bal -= denhi2;
+			cout << "заберите " << denhi2 << " бабла" << endl;
+			cout << "теперь ваш баланс: " << bal << endl;
+		}
+		else {
+			cout << "недостаточно средств" << endl;
+		}
+
+		break;
+	case ('l'):
+		cout << "баланс: " << bal << " денег" << endl;
+
+		break;
+
+	default:
+		cout << "неизвестная команда" << endl;
+	}
+}*/
+int c;
+while (true) {
+	int r;
+	string A, B, F, H;
+	float g2, g3, G1, G2, S, C, C2, C3, P, a, b, c2, Ptr, Str, pp;
+	cout << "1 - круг, 2 - треугольник, 3 - квадрат, 4 - прямоугольник" << endl;
+	cin >> c;
+	switch (c) {
+	case 1:
+		cout << "введите радиус круга: ";
+		cin >> r;
+		cout << "что нужно найти(площадь, периметр): ";
+		cin >> A;
+		S = 3.14 * pow(r, 2);
+		P = 2 * 3.14 * r;
+		cout << (A == "площадь" ? to_string(S).substr(0, to_string(S).find('.') + 3) :
+			A == "периметр" ? to_string(P).substr(0, to_string(S).find('.') + 3) :
+			"неверный ввод") << endl;
+		break;
+	case 2:
+		cout << "введите 3 стороны треугольника: ";
+		cin >> a >> b >> c2;
+		pp = (a * b * c2) / 2.0;
+		Str = sqrt(pp * (pp - a) * (pp - b) * (pp - c2));
+		Ptr = a + b + c2;
+		cout << "что нужно найти(площадь, периметр): ";
+		cin >> B;
+		cout << (B == "площадь" ? to_string(Str).substr(0, to_string(Str).find('.') + 3) :
+				B == "периметр" ? to_string(Ptr).substr(0, to_string(Ptr).find('.') + 3) :
+				"неверный ввод") << endl;
+		break;
+	case 3:
+		cout << "введите сторону квадрата: ";
+		cin >> C;
+		C2 = pow(C, 2);
+		C3 = C * 4;
+		cout << "что нужно найти(площадь, периметр): ";
+		cin >> F;
+		cout << (F == "площадь" ? to_string(C2).substr(0, to_string(C2).find('.') + 3) :
+			F == "периметр" ? to_string(C3).substr(0, to_string(C3).find('.') + 3) :
+			"неверный ввод") << endl;
+		break;
+	case 4:
+		cout << "введите 2 стороны прямоугольника: ";
+		cin >> G1 >> G2;
+		g2 = G1 * G2;
+		g3 = (G1 + G2) * 2;
+		cout << "что нужно найти(площадь, периметр): ";
+		cin >> H;
+		cout << (H == "площадь" ? to_string(g2).substr(0, to_string(g2).find('.') + 3) :
+			H == "периметр" ? to_string(g3).substr(0, to_string(g3).find('.') + 3) :
+			"неверный ввод") << endl;
+		break;
+	default: cout << "че ты пишешь" << endl;
+	}
+}
+
+int a1, b1, c5;
+cout << "введите число: ";
+cin >> a1;
+cout << "введите диапазон от и до: ";
+cin >> b1 >> c5;
+cout << (c5 > a1 && c5 > b1 || c5 < a1 && c5 > b1 ? "число входит" : "число не входит");
     
     return 0;
 }
